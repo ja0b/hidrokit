@@ -11,7 +11,7 @@ import pandas as pd
 from hidrokit.contrib.taruma import hk43, hk53
 from hidrokit.prep import timeseries
 
-import seaborns as sns  # pylint: disable=import-error
+import seaborn as sns  # pylint: disable=import-error
 
 
 def _check_system(PACKAGE_LIST='numpy pandas matplotlib'):
