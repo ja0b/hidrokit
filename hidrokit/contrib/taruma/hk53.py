@@ -30,7 +30,7 @@ def _get_x_tensor(array, timesteps, columns_index):
 
     for col in columns_index:
         array_each_column = []
-        for row in range(timesteps, rows):
+        for row in range(timesteps, rows + 1):
             array_each_column.append(array[row - timesteps:row, col])
         X.append(array_each_column)
 

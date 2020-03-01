@@ -78,7 +78,7 @@ def plot_corr_mat(df, savefig=False, _DIRIMAGE=None):
     fig, ax = plt.subplots(figsize=(12, 10))
     fig.tight_layout()
     sns.heatmap(
-        corr, mask=mask, cmap='RdGy',
+        corr, mask=mask, cmap='coolwarm',
         center=0, square=True, robust=True,
         linewidth=.5, cbar_kws={'shrink': .7}, annot=True, ax=ax,
         fmt='.2f',
